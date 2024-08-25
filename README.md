@@ -1,3 +1,3 @@
 ## Npm Package Stack
 
-A simple package to help you manage your npm packages.
+A simple package to help you getting started with a new npm packages.
