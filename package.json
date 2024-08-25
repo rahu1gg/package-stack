@@ -13,7 +13,7 @@
     "build": "tsup",
     "lint": "tsc"
   },
-  "keywords": [],
+  "keywords": ["npm package", "stack", "starter kit"],
   "author": "rahu1gg",
   "license": "MIT",
   "devDependencies": {
