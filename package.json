@@ -1,5 +1,5 @@
 {
-  "name": "package-stack",
+  "name": "npm-package-stack",
   "version": "0.0.1",
   "description": "",
   "main": "./dist/index.js",
