@@ -1,5 +1,5 @@
 ## 🚀 Npm Package Stack
-A minimal starter kit designed to build and publish a new npm package with ease.
+A minimal starter kit designed to build and publish a npm package with ease.
 
 #### The Stack includes
 - [Typescript](https://www.typescriptlang.org/) for type safe and maintainable npm package
@@ -10,9 +10,17 @@ A minimal starter kit designed to build and publish a new npm package with ease.
 #### Installation
 1. Clone the repository ```git clone https://github.com/rahu1gg/npm-package-stack.git```
 2. Navigate to the directory ```cd npm-package-stack```
-3. Make sure you edit the `package.json` file with your **npm package** info
-4. Install dependencies ```pnpm install```
-5. Building the package ```pnpm build```
+3. Make sure you edit the below properties in the `package.json` file
+   - name
+   - version
+   - description
+   - homepage
+   - repository
+   - keywords
+   - author
+   - license
+5. Install dependencies ```pnpm install```
+6. Building the package ```pnpm build```
 
 > Make sure you have __Node.js__ and __pnpm__ installed in your machine
 
