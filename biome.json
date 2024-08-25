@@ -1,0 +1,46 @@
+{
+  "$schema": "./node_modules/@biomejs/biome/configuration_schema.json",
+  "organizeImports": {
+    "enabled": false
+  },
+  "files": {
+    "ignore": ["node_modules/**/*", "dist/**/*", ".next/**/*", "src/routeTree.gen.ts", ".vercel/**/*"]
+  },
+  "vcs": {
+    "enabled": true,
+    "clientKind": "git",
+    "useIgnoreFile": true
+  },
+  "linter": {
+    "enabled": true,
+    "rules": {
+      "recommended": true,
+      "style": {
+        "noNonNullAssertion": "off"
+      },
+      "suspicious": {
+        "noEmptyInterface": "off"
+      },
+      "a11y": {
+        "useKeyWithClickEvents": "off",
+        "useKeyWithMouseEvents": "off",
+        "noSvgWithoutTitle": "off"
+      }
+    },
+    "ignore": ["src/exceptions/errors.ts"]
+  },
+  "formatter": {
+    "ignore": ["configuration-schema.json"],
+    "enabled": true,
+    "indentStyle": "space",
+    "lineWidth": 150
+  },
+  "javascript": {
+    "formatter": {
+      "quoteStyle": "single",
+      "trailingCommas": "all",
+      "semicolons": "always",
+      "jsxQuoteStyle": "single"
+    }
+  }
+}
