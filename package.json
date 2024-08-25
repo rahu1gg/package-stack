@@ -5,6 +5,10 @@
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
+  "homepage": "https://github.com/rahu1gg/npm-package-stack",
+  "repository": {
+    "url": "https://github.com/rahu1gg/npm-package-stack"
+  },
   "scripts": {
     "build": "tsup",
     "lint": "tsc"

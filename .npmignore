@@ -1,0 +1,28 @@
+# Logs
+logs
+*.log
+pnpm-debug.log*
+
+src
+node_modules
+tsconfig.json
+tsup.config.ts
+biome.json
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Env Vault
+.env*
+.flaskenv*
+!.env.project
+!.env.vault
