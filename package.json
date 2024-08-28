@@ -1,10 +1,8 @@
 {
   "name": "npm-package-stack",
   "version": "0.0.2",
-  "description": "",
-  "main": "./dist/index.js",
-  "module": "./dist/index.mjs",
-  "types": "./dist/index.d.ts",
+  "description": "A starter pack for creating an npm package using typescript, tsup, pnpm and biomejs",
+  "private": false,
   "homepage": "https://github.com/rahu1gg/npm-package-stack",
   "repository": {
     "url": "https://github.com/rahu1gg/npm-package-stack"
@@ -12,6 +10,17 @@
   "scripts": {
     "build": "tsup",
     "lint": "tsc"
+  },
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    "./package.json": "./package.json",
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "default": "./dist/index.js"
+    }
   },
   "keywords": ["npm package", "stack", "starter kit"],
   "author": "rahul-ghost",
