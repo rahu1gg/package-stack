@@ -29,11 +29,7 @@
       "default": "./dist/index.js"
     }
   },
-  "keywords": [
-    "npm package",
-    "stack",
-    "starter kit"
-  ],
+  "keywords": ["npm package", "stack", "starter kit"],
   "author": "rahul-ghost",
   "license": "MIT",
   "devDependencies": {
