@@ -34,7 +34,7 @@
     "enabled": true,
     "indentStyle": "space",
     "lineWidth": 150,
-    "lineEnding": "crlf"
+    "lineEnding": "lf"
   },
   "javascript": {
     "formatter": {
