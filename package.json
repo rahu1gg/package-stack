@@ -1,6 +1,6 @@
 {
   "name": "npm-package-stack",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A starter pack for creating an npm package using typescript, tsup, pnpm and biomejs",
   "private": false,
   "homepage": "https://github.com/rahu1gg/npm-package-stack",
@@ -10,8 +10,8 @@
   "scripts": {
     "dev": "vitest",
     "build": "tsup",
-    "format": "biome format --write",
-    "check-format": "biome format",
+    "format": "biome format --write .",
+    "check-format": "biome format .",
     "check-exports": "attw --pack .",
     "lint": "tsc",
     "test": "vitest run",
@@ -29,7 +29,11 @@
       "default": "./dist/index.js"
     }
   },
-  "keywords": ["npm package", "stack", "starter kit"],
+  "keywords": [
+    "npm package",
+    "stack",
+    "starter kit"
+  ],
   "author": "rahul-ghost",
   "license": "MIT",
   "devDependencies": {
