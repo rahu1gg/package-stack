@@ -10,8 +10,8 @@
   "scripts": {
     "dev": "vitest",
     "build": "tsup",
-    "format": "biome format --write ./src",
-    "check-format": "biome format ./src",
+    "format": "biome format --write",
+    "check-format": "biome format",
     "check-exports": "attw --pack .",
     "lint": "tsc",
     "test": "vitest run",
