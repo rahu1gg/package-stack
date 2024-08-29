@@ -8,8 +8,16 @@
     "url": "https://github.com/rahu1gg/npm-package-stack"
   },
   "scripts": {
+    "dev": "vitest",
     "build": "tsup",
-    "lint": "tsc"
+    "format": "biome format --write ./src",
+    "check-format": "biome format ./src",
+    "check-exports": "attw --pack .",
+    "lint": "tsc",
+    "test": "vitest run",
+    "prepublishOnly": "npm run ci",
+    "local-release": "changeset version && changeset publish",
+    "ci": "pnpm build && pnpm check-format && pnpm check-exports && pnpm lint && pnpm test"
   },
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
@@ -17,7 +25,6 @@
   "exports": {
     "./package.json": "./package.json",
     ".": {
-      "types": "./dist/index.d.ts",
       "import": "./dist/index.mjs",
       "default": "./dist/index.js"
     }
@@ -26,8 +33,15 @@
   "author": "rahul-ghost",
   "license": "MIT",
   "devDependencies": {
+    "@arethetypeswrong/cli": "^0.15.4",
     "@biomejs/biome": "^1.8.3",
+    "@changesets/cli": "^2.27.7",
+    "@types/node": "^22.5.1",
     "tsup": "^8.2.4",
-    "typescript": "^5.5.4"
+    "typescript": "^5.5.4",
+    "vitest": "^2.0.5"
+  },
+  "dependencies": {
+    "zod": "^3.23.8"
   }
 }

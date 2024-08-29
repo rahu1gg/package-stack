@@ -1,17 +1,26 @@
 {
   "compilerOptions": {
-    "strict": true,
-    "noImplicitAny": true,
+    /* Base Options: */
     "esModuleInterop": true,
-    "strictNullChecks": true,
+    "skipLibCheck": true,
     "target": "ES2022",
-    "moduleResolution": "Node10",
-    "module": "CommonJS",
-    "declaration": true,
+    "allowJs": true,
+    "resolveJsonModule": true,
+    "moduleDetection": "force",
     "isolatedModules": true,
     "noEmit": true,
-    "outDir": "dist"
+    "lib": ["ES2022"],
+
+    /* Strictness */
+    "strict": true,
+    "noUncheckedIndexedAccess": true,
+    "noImplicitOverride": true,
+
+    /* If transpiling with TypeScript: */
+    "module": "Preserve",
+    "noImplicitAny": true,
+    "strictNullChecks": true
   },
   "include": ["src"],
-  "exclude": ["node_modules"]
+  "exclude": ["dist", "node_modules"]
 }
