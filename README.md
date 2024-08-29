@@ -13,9 +13,10 @@ A minimal starter kit designed to build and publish a npm package with ease.
 - [pnpm](https://pnpm.io/) as fast, efficient package-manager
 
 #### Installation
-1. Clone the repository `git clone https://github.com/rahu1gg/npm-package-stack.git`
-2. Navigate to the directory `cd npm-package-stack`
-3. Make sure you edit the below properties in the `package.json` file
+1. Fork the repository
+2. Clone the repository `git clone https://github.com/<your_github_username>/npm-package-stack.git`
+3. Navigate to the directory `cd npm-package-stack`
+4. Make sure you edit the below properties in the `package.json` file
    - name
    - version
    - description
@@ -25,9 +26,18 @@ A minimal starter kit designed to build and publish a npm package with ease.
    - author
    - license
 5. Install dependencies `pnpm install`
-6. Building the package `pnpm build`
+6. For more scripts refer to `package.json` file
 
 > Make sure you have __Node.js__ and __pnpm__ installed in your machine
+
+#### Scripts and Commands
+1. `pnpm build` - compiles the typescript code using `tsup` with `tsup.config.ts` file as configuration
+2. `pnpm lint` - lints the project using `tsc`
+3. `pnpm check-exports` - checks if all `exports` from the package are correct
+4. `pnpm format` - formats the project using biome
+5. `pnpm check-format` - check if all files in the project are formatted correctly
+6. `pnpm ` - 
+7. `pnpm ci` - runs the CI process for GitHub actions
 
 #### Project Structure
 ```
