@@ -36,8 +36,11 @@ A minimal starter kit designed to build and publish a npm package with ease.
 3. `pnpm check-exports` - checks if all `exports` from the package are correct
 4. `pnpm format` - formats the project using biome
 5. `pnpm check-format` - check if all files in the project are formatted correctly
-6. `pnpm ` - 
-7. `pnpm ci` - runs the CI process for GitHub actions
+6. `pnpm test` - test the project using `vitest`
+7. `pnpm dev` - test the project using `vitest` in **watch** mode
+8. `pnpm prepublishOnly` - run the `ci` script before running `local-release` script
+9. `pnpm local-release` - run `changeset version` and publish to npm using `changeset publish`
+10. `pnpm ci` - runs the CI process for GitHub actions
 
 #### Project Structure
 ```
