@@ -18,7 +18,8 @@
     "prepublishOnly": "npm run ci",
     "local-release": "changeset version && changeset publish",
     "release": "changeset publish",
-    "ci": "pnpm build && pnpm check-format && pnpm check-exports && pnpm lint && pnpm test"
+    "ci": "pnpm build && pnpm check-format && pnpm check-exports && pnpm lint && pnpm test",
+    "changeset-version": "changeset version && pnpm format"
   },
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",

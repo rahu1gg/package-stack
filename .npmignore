@@ -3,6 +3,8 @@ logs
 *.log
 pnpm-debug.log*
 
+.changeset
+.github
 src
 node_modules
 tsconfig.json
