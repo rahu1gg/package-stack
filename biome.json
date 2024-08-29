@@ -33,7 +33,8 @@
     "ignore": ["configuration-schema.json"],
     "enabled": true,
     "indentStyle": "space",
-    "lineWidth": 150
+    "lineWidth": 150,
+    "lineEnding": "crlf"
   },
   "javascript": {
     "formatter": {
