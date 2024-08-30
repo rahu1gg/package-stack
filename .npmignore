@@ -6,10 +6,13 @@ pnpm-debug.log*
 .changeset
 .github
 src
+scripts
 node_modules
 tsconfig.json
 tsup.config.ts
 biome.json
+.turbo
+turbo.json
 *.local
 
 # Editor directories and files
