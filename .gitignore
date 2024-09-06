@@ -5,6 +5,7 @@ pnpm-debug.log*
 
 dist
 node_modules
+.turbo
 *.local
 
 # Editor directories and files
