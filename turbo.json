@@ -1,0 +1,18 @@
+{
+  "$schema": "https://turbo.build/schema.json",
+  "tasks": {
+    "build": {
+      "outputs": ["dist"]
+    },
+    "check-exports": {
+      "dependsOn": ["build"]
+    },
+    "lint": {},
+    "format-check": {},
+    "lint-pkg-json": {},
+    "publish": {
+      "dependsOn": ["build", "check-exports", "lint", "lint-pkg-json"],
+      "cache": false
+    }
+  }
+}

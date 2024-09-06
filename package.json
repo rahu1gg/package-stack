@@ -10,15 +10,15 @@
   "scripts": {
     "dev": "vitest",
     "build": "tsup",
-    "format": "biome format --write .",
-    "check-format": "biome format .",
+    "format": "biome format --write ./src",
+    "format:check": "biome format ./src",
     "check-exports": "attw --pack .",
     "lint": "tsc",
     "test": "vitest run",
     "prepublishOnly": "npm run ci",
     "local-release": "changeset version && changeset publish",
     "release": "changeset publish",
-    "ci": "pnpm build && pnpm check-format && pnpm check-exports && pnpm lint && pnpm test",
+    "ci": "pnpm build && pnpm format:check && pnpm check-exports && pnpm lint && pnpm test",
     "changeset-version": "changeset version && pnpm format"
   },
   "main": "./dist/index.js",
@@ -40,10 +40,12 @@
     "@changesets/cli": "^2.27.7",
     "@types/node": "^22.5.1",
     "tsup": "^8.2.4",
+    "turbo": "^2.1.1",
     "typescript": "^5.5.4",
     "vitest": "^2.0.5"
   },
   "dependencies": {
     "zod": "^3.23.8"
-  }
+  },
+  "packageManager": "pnpm@9.9.0"
 }
