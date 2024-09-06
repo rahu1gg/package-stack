@@ -4,7 +4,7 @@
     "enabled": false
   },
   "files": {
-    "ignore": ["node_modules/**/*", "dist/**/*", ".next/**/*", "src/routeTree.gen.ts", ".vercel/**/*"]
+    "ignore": ["node_modules/**/*", "dist/**/*", ".next/**/*", "src/routeTree.gen.ts", ".vercel/**/*", "out/**/*"]
   },
   "vcs": {
     "enabled": true,
@@ -23,14 +23,11 @@
       },
       "a11y": {
         "useKeyWithClickEvents": "off",
-        "useKeyWithMouseEvents": "off",
-        "noSvgWithoutTitle": "off"
+        "useKeyWithMouseEvents": "off"
       }
-    },
-    "ignore": ["src/exceptions/errors.ts"]
+    }
   },
   "formatter": {
-    "ignore": ["configuration-schema.json"],
     "enabled": true,
     "indentStyle": "space",
     "lineWidth": 150,
