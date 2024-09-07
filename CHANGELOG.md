@@ -1,5 +1,11 @@
 # npm-package-stack
 
+## 0.0.10
+
+### Patch Changes
+
+- 728195e: Remove all functions except add
+
 ## 0.0.9
 
 ### Patch Changes
