@@ -16,7 +16,7 @@
     "format:check": "biome format ./src",
     "lint": "tsc",
     "check-exports": "attw --pack .",
-    "local-release": "changeset version && turbo release",
+    "local-release": "changeset version && pnpm release",
     "release": "turbo run publish",
     "publish": "changeset publish"
   },
@@ -30,11 +30,7 @@
       "default": "./dist/index.js"
     }
   },
-  "keywords": [
-    "npm package",
-    "stack",
-    "starter kit"
-  ],
+  "keywords": ["npm package", "stack", "starter kit"],
   "author": "rahul-peacock",
   "license": "MIT",
   "devDependencies": {
