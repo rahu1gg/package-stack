@@ -1,5 +1,11 @@
 # npm-package-stack
 
+## 0.0.9
+
+### Patch Changes
+
+- 0e52e38: Add power function again
+
 ## 0.0.8
 
 ### Patch Changes
