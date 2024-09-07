@@ -10,15 +10,15 @@
   "scripts": {
     "dev": "vitest",
     "build": "tsup",
+    "ci": "turbo build check-exports lint format:check test",
+    "test": "vitest run",
     "format": "biome format --write ./src",
     "format:check": "biome format ./src",
-    "check-exports": "attw --pack .",
     "lint": "tsc",
-    "test": "vitest run",
-    "prepublishOnly": "npm run ci",
-    "local-release": "changeset version && changeset publish",
-    "release": "changeset publish",
-    "ci": "pnpm build && pnpm format:check && pnpm check-exports && pnpm lint && pnpm test"
+    "check-exports": "attw --pack .",
+    "local-release": "changeset version && turbo release",
+    "release": "turbo run publish",
+    "publish": "changeset publish"
   },
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
@@ -31,7 +31,7 @@
     }
   },
   "keywords": ["npm package", "stack", "starter kit"],
-  "author": "rahul-ghost",
+  "author": "rahul-peacock",
   "license": "MIT",
   "devDependencies": {
     "@arethetypeswrong/cli": "^0.15.4",

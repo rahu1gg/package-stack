@@ -5,13 +5,22 @@
       "outputs": ["dist"]
     },
     "check-exports": {
-      "dependsOn": ["build"]
+      "dependsOn": ["build", "format:check"]
     },
-    "lint": {},
-    "format-check": {},
-    "lint-pkg-json": {},
+    "lint": {
+      "dependsOn": ["^lint"]
+    },
+    "transit": {
+      "dependsOn": ["^transit"]
+    },
+    "format:check": {
+      "dependsOn": ["transit"]
+    },
+    "test": {
+      "dependsOn": ["transit"]
+    },
     "publish": {
-      "dependsOn": ["build", "check-exports", "lint", "lint-pkg-json"],
+      "dependsOn": ["build", "format:check", "check-exports", "lint", "test"],
       "cache": false
     }
   }
