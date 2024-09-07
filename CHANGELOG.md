@@ -1,5 +1,11 @@
 # npm-package-stack
 
+## 0.0.8
+
+### Patch Changes
+
+- 1ce9499: Add remainder function
+
 ## 0.0.7
 
 ### Patch Changes
