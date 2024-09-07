@@ -3,9 +3,9 @@
   "version": "0.0.10",
   "description": "A starter pack for creating an npm package using typescript, tsup, pnpm and biomejs",
   "private": false,
-  "homepage": "https://github.com/rahu1gg/npm-package-stack",
+  "homepage": "https://github.com/rahulpeacock/npm-package-stack",
   "repository": {
-    "url": "https://github.com/rahu1gg/npm-package-stack"
+    "url": "https://github.com/rahulpeacock/npm-package-stack"
   },
   "scripts": {
     "dev": "vitest",
@@ -30,11 +30,7 @@
       "default": "./dist/index.js"
     }
   },
-  "keywords": [
-    "npm package",
-    "stack",
-    "starter kit"
-  ],
+  "keywords": ["npm package", "stack", "starter kit"],
   "author": "rahul-peacock",
   "license": "MIT",
   "devDependencies": {
