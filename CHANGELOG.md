@@ -1,5 +1,11 @@
 # npm-package-stack
 
+## 0.0.6
+
+### Patch Changes
+
+- d3f859d: Added divide function
+
 ## 0.0.5
 
 ### Patch Changes
