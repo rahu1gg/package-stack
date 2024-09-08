@@ -1,5 +1,11 @@
 # npm-starter-kit
 
+## 0.0.4
+
+### Patch Changes
+
+- 3663275: Add divide fn
+
 ## 0.0.3
 
 ### Patch Changes
