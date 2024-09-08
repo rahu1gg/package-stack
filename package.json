@@ -1,6 +1,6 @@
 {
   "name": "npm-starter-kit",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "A starter pack for creating an npm package using typescript, tsup, pnpm and biomejs",
   "private": false,
   "homepage": "https://github.com/rahulpeacock/npm-package-stack",
@@ -12,13 +12,13 @@
     "build": "tsup",
     "ci": "turbo build check-exports lint format:check test",
     "test": "vitest run",
+    "format": "biome format --write ./src",
     "format:check": "biome format ./src",
     "lint": "tsc",
     "check-exports": "attw --pack .",
     "local-release": "changeset version && pnpm run release",
     "release": "turbo run publish",
-    "publish": "changeset publish",
-    "format": "biome format --write ./src"
+    "publish-package": "changeset publish"
   },
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
