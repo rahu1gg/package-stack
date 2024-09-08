@@ -17,8 +17,7 @@
     "lint": "tsc",
     "check-exports": "attw --pack .",
     "local-release": "changeset version && pnpm run release",
-    "release": "turbo run publish",
-    "publish": "changeset publish"
+    "release": "turbo run publish"
   },
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
@@ -30,11 +29,7 @@
       "default": "./dist/index.js"
     }
   },
-  "keywords": [
-    "npm package",
-    "stack",
-    "starter kit"
-  ],
+  "keywords": ["npm package", "stack", "starter kit"],
   "author": "rahul-peacock",
   "license": "MIT",
   "devDependencies": {
