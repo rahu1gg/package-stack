@@ -2,8 +2,8 @@
 A minimal starter kit designed to build and publish a npm package with ease.
 
 #### The Stack includes
-- [Git](https://git-scm.com/) for version control
 - [Typescript](https://www.typescriptlang.org/) for writing our code and keeping it type-safe
+- [Turbopack](https://turbo.build/pack/docs) for increased performance and faster builds
 - [@arethetypeswrong/cli](https://arethetypeswrong.github.io/) for checking our exports
 - [tsup](https://tsup.egoist.dev/) for compiling our TypeScript code into CJS and ESM
 - [Vitest](https://vitest.js.org/) for running our tests 
@@ -11,6 +11,7 @@ A minimal starter kit designed to build and publish a npm package with ease.
 - [Changesets](https://github.com/changesets/changesets) for versioning and publishing our package
 - [Biome](https://biomejs.dev/) for formatting
 - [pnpm](https://pnpm.io/) as fast, efficient package-manager
+- [Git](https://git-scm.com/) for version control
 
 #### Installation
 1. Fork the repository
