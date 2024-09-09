@@ -5,7 +5,7 @@
   "private": false,
   "homepage": "https://github.com/rahulpeacock/npm-starter-kit",
   "repository": {
-    "url": "https://github.com/rahulpeacock/npm-starter-kit"
+    "url": "git+https://github.com/rahulpeacock/npm-starter-kit.git"
   },
   "scripts": {
     "dev": "vitest",
@@ -30,7 +30,11 @@
       "default": "./dist/index.js"
     }
   },
-  "keywords": ["npm package", "stack", "starter kit"],
+  "keywords": [
+    "npm package",
+    "stack",
+    "starter kit"
+  ],
   "author": "rahulpeacock",
   "license": "MIT",
   "devDependencies": {
