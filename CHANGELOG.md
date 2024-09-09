@@ -1,5 +1,11 @@
 # npm-starter-kit
 
+## 0.0.6
+
+### Patch Changes
+
+- bb225aa: Add remainder function
+
 ## 0.0.5
 
 ### Patch Changes
