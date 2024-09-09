@@ -3,7 +3,7 @@ A minimal starter kit designed to build and publish a npm package with ease.
 
 #### The Stack includes
 - [Typescript](https://www.typescriptlang.org/) for writing our code and keeping it type-safe
-- [Turbopack](https://turbo.build/pack/docs) for increased performance and faster builds
+- [Turborepo](https://turbo.build/repo/docs/guides/single-package-workspaces) for increased performance and faster builds
 - [@arethetypeswrong/cli](https://arethetypeswrong.github.io/) for checking our exports
 - [tsup](https://tsup.egoist.dev/) for compiling our TypeScript code into CJS and ESM
 - [Vitest](https://vitest.js.org/) for running our tests 
