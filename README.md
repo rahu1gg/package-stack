@@ -15,7 +15,7 @@ A minimal starter kit designed to build and publish a npm package with ease.
 
 #### Installation
 1. Fork the repository
-2. Clone the repository `git clone https://github.com/<your_github_username>/npm-package-stack.git`
+2. Clone the repository `git clone https://github.com/<your_github_username>/npm-starter-kit.git`
 3. Navigate to the directory `cd npm-package-stack`
 4. Make sure you edit the below properties in the `package.json` file
    - name
